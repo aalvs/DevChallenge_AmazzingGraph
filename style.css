@@ -1,0 +1,23 @@
+
+html body {
+ font-family: 'Roboto', sans-serif;
+}
+
+.containerOne {
+    width: auto;
+    height: 50%;
+    background-color: blueviolet;
+    padding: 20px 20px;
+}
+
+.containerTwo {
+    width: auto;
+    height: 50%;
+    background-color: crimson ;
+
+}
+
+.picture {
+    width: 380px;
+    height: 380px;
+}
