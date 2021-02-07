@@ -63,22 +63,22 @@ main {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 80vh;
+    margin-top: 5rem;
 }
 
 .wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .boxContent {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -113,6 +113,24 @@ main {
     width: 100%;
 }
 
+footer {
+    position: absolute;
+    width: 100%;
+    padding: 1rem 0;
+    bottom: 0;
+    background: var(--bg-light); 
+}
+
+footer .rodape {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+footer .social {
+    display: flex;
+}
+
 /* RESPONSIVIDADE */
 @media (min-width: 320px) and (max-width: 768px){
 
@@ -130,6 +148,10 @@ main {
     
     .boxContent {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        position: relative;
     }
 }
