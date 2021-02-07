@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* VARIAVEIS */
+:root {
+    --c-orange: #D2872C;
+    --c-gray: #766F68;
+    --bg-light: #f2f2f2;
+}
+
+/* GLOBAL */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 93.75%; /* 15px */
+}
+
+ul, li {
+    list-style: none;
+}
+
+a, button, input, select, textarea {
+    outline: none;
+    text-decoration: none;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+/* HEADER */
+header {
+    width: 100vw;
+    padding: 1rem 0;
+    background: transparent;
+}
+
+.Logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--c-orange);
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+    
+.menu li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--c-gray);
+}
+
+.menu li a:hover {
+    color: var(--c-orange);
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.boxContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.content1 h1 {
+    font-size: 4rem;
+    color: var(--c-gray);
+}
+
+.content1 p {
+    font-size: 1.5rem;
+    color: var(--c-gray);
+}
+
+.btn {
+    width: 220px;
+    border: none;
+    background: var(--c-orange);
+    color: white;
+    border-radius: 0.50rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.content2 img {
+    width: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media (min-width: 320px) and (max-width: 768px){
+
+    html {
+        font-size: 87.5%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+    
+    .boxContent {
+        display: flex;
+        flex-direction: column;
+    }
+}
